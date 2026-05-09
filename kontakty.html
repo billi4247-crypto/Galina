@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и запись — Живая Глина</title>
+  <meta name="description" content="Запишитесь на занятие: +7 495 150 20 43. Горки-2, Рублёво-Успенское шоссе, 23, Полюс Арена. Ежедневно 10:00–20:00.">
+  <meta name="keywords" content="гончарная студия, керамика, живопись, барельеф, тафтинг, Горки-2, Рублёво-Успенское шоссе, запись на занятие">
+  <link rel="canonical" href="https://zhivayaglina.ru/kontakty.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Контакты и запись — Живая Глина">
+  <meta property="og:description" content="Запишитесь на занятие: +7 495 150 20 43. Горки-2, Рублёво-Успенское шоссе, 23, Полюс Арена. Ежедневно 10:00–20:00.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zhivayaglina.ru/kontakty.html">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Живая Глина">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========== RESET & VARIABLES ========== */
+    :root {
+      --color-bg: #FDF8F3;
+      --color-bg-alt: #F5EDE3;
+      --color-card: #FFFFFF;
+      --color-text: #3D2B1F;
+      --color-text-light: #6B5744;
+      --color-primary: #C75B39;
+      --color-primary-hover: #A84D2E;
+      --color-primary-light: #F0D5CA;
+      --color-secondary: #7A8B6F;
+      --color-secondary-hover: #6A7A5F;
+      --color-accent: #D4A574;
+      --color-border: #E8DDD0;
+      --color-white: #FFFFFF;
+      --color-whatsapp: #25D366;
+      --font-heading: 'Comfortaa', 'Nunito', sans-serif;
+      --font-body: 'Nunito', 'Segoe UI', sans-serif;
+      --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --duration-block: 0.6s;
+      --duration-hover: 0.25s;
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
+
+    input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    /* ========== TYPOGRAPHY ========== */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--color-text);
+      line-height: 1.2;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 700; }
+    h2 { font-size: 2rem; font-weight: 600; }
+    h3 { font-size: 1.5rem; font-weight: 600; }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 3.2rem; }
+      h2 { font-size: 2.4rem; }
+      h3 { font-size: 1.75rem; }
+    }
+
+    /* ========== CONTAINER ========== */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    @media (min-width: 768px) {
+      .container { padding: 0 32px; }
+    }
+
+    @media (min-width: 1440px) {
+      .container { max-width: 1320px; }
+    }
+
+    /* ========== ANIMATIONS ========== */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity var(--duration-block) var(--ease-out),
+                  transform var(--duration-block) var(--ease-out);
+    }
+
+    [data-animate].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      [data-animate] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+      [data-animate].is-visible {
+        transition: none;
+      }
+      .floating-btn {
+        animation: none !important;
+      }
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    /* ========== HEADER ========== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(253, 248, 243, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--duration-hover) var(--ease-out),
+                  background var(--duration-hover) var(--ease-out);
+    }
+
+    .header.scrolled {
+      border-bottom-color: var(--color-border);
+      background: rgba(253, 248, 243, 0.97);
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .header__logo {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .header__logo:hover {
+      color: var(--color-primary-hover);
+    }
+
+    .header__nav {
+      display: none;
+      align-items: center;
+      gap: 28px;
+    }
+
+    @media (min-width: 1024px) {
+      .header__nav {
+        display: flex;
+      }
+    }
+
+    .header__nav a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+      transition: color var(--duration-hover);
+      position: relative;
+    }
+
+    .header__nav a:hover,
+    .header__nav a.active {
+      color: var(--color-primary);
+    }
+
+    .header__nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--color-primary);
+      border-radius: 1px;
+    }
+
+    .header__right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header__phone {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-text);
+      transition: color var(--duration-hover);
+    }
+
+    .header__phone:hover {
+      color: var(--color-primary);
+    }
+
+    .header__phone svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .header__phone { display: flex; }
+    }
+
+    .header__cta {
+      display: none;
+      padding: 10px 22px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background var(--duration-hover), transform var(--duration-hover);
+    }
+
+    .header__cta:hover {
+      background: var(--color-primary-hover);
+      transform: translateY(-1px);
+    }
+
+    @media (min-width: 768px) {
+      .header__cta { display: inline-flex; }
+    }
+
+    /* Burger */
+    .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      gap: 5px;
+      cursor: pointer;
+      z-index: 1100;
+    }
+
+    @media (min-width: 1024px) {
+      .burger { display: none; }
+    }
+
+    .burger__line {
+      width: 24px;
+      height: 2px;
+      background: var(--color-text);
+      border-radius: 2px;
+      transition: transform 0.3s var(--ease-out), opacity 0.3s var(--ease-out);
+    }
+
+    .burger.open .burger__line:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .burger.open .burger__line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .burger.open .burger__line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--color-bg);
+      z-index: 1050;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s var(--ease-out);
+    }
+
+    .mobile-menu.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-menu a {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text);
+      transition: color var(--duration-hover);
+    }
+
+    .mobile-menu a:hover,
+    .mobile-menu a.active {
+      color: var(--color-primary);
+    }
+
+    .mobile-menu__phone {
+      margin-top: 16px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    .mobile-menu__cta {
+      margin-top: 8px;
+      padding: 14px 36px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background var(--duration-hover);
+    }
+
+    .mobile-menu__cta:hover {
+      background: var(--color-primary-hover);
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 120px 0 48px;
+      background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 40%, var(--color-primary-light) 100%);
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 130px 0 56px;
+      }
+    }
+
+    .hero__title {
+      margin-bottom: 12px;
+      color: var(--color-text);
+    }
+
+    .hero__subtitle {
+      font-size: 1.1rem;
+      color: var(--color-text-light);
+      max-width: 520px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+      .hero__subtitle { font-size: 1.25rem; }
+    }
+
+    /* ========== SECTIONS ========== */
+    .section {
+      padding: 56px 0;
+    }
+
+    @media (min-width: 768px) {
+      .section { padding: 72px 0; }
+    }
+
+    .section--alt {
+      background: var(--color-bg-alt);
+    }
+
+    .section__title {
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .section__title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--color-accent);
+      border-radius: 2px;
+      margin: 12px auto 0;
+    }
+
+    /* ========== BOOKING SECTION ========== */
+    .booking-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .booking-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+      }
+    }
+
+    /* Left Column - Call Us */
+    .booking-call {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .booking-call__heading {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .booking-call__heading svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-primary);
+    }
+
+    .booking-call__phone-main {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .booking-call__phone-main a {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      transition: color var(--duration-hover);
+    }
+
+    @media (min-width: 480px) {
+      .booking-call__phone-main a {
+        font-size: 2rem;
+      }
+    }
+
+    .booking-call__phone-main a:hover {
+      color: var(--color-primary-hover);
+    }
+
+    .booking-call__schedule {
+      font-size: 1rem;
+      color: var(--color-text-light);
+      font-weight: 400;
+    }
+
+    .booking-call__messengers {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-messenger {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-white);
+      transition: transform var(--duration-hover), filter var(--duration-hover);
+      flex: 1;
+      min-width: 180px;
+      justify-content: center;
+    }
+
+    .btn-messenger:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+
+    .btn-messenger svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    .btn-messenger--whatsapp {
+      background: var(--color-whatsapp);
+    }
+
+    .btn-messenger--telegram {
+      background: #0088cc;
+    }
+
+    .booking-call__phones-extra {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .booking-call__phones-extra-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .booking-call__phones-extra a {
+      font-size: 1rem;
+      color: var(--color-text-light);
+      font-weight: 600;
+      transition: color var(--duration-hover);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .booking-call__phones-extra a svg {
+      width: 16px;
+      height: 16px;
+      color: var(--color-accent);
+    }
+
+    .booking-call__phones-extra a:hover {
+      color: var(--color-primary);
+    }
+
+    /* Right Column - Form */
+    .booking-form-wrapper {
+      background: var(--color-card);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 24px rgba(61, 43, 31, 0.06);
+      border: 1px solid var(--color-border);
+    }
+
+    @media (min-width: 768px) {
+      .booking-form-wrapper {
+        padding: 36px 32px;
+      }
+    }
+
+    .booking-form-wrapper__heading {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .booking-form-wrapper__heading svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-primary);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 6px;
+    }
+
+    .form-group label .required {
+      color: var(--color-primary);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--color-border);
+      border-radius: 10px;
+      font-size: 1rem;
+      color: var(--color-text);
+      background: var(--color-bg);
+      transition: border-color var(--duration-hover), box-shadow var(--duration-hover);
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px var(--color-primary-light);
+    }
+
+    .form-control::placeholder {
+      color: #B0A090;
+    }
+
+    .form-control--textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .form-control--select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B5744' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+    }
+
+    .form-control.error {
+      border-color: #e74c3c;
+      box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+    }
+
+    .error-message {
+      font-size: 0.82rem;
+      color: #e74c3c;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .error-message.visible {
+      display: block;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      padding: 14px 24px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: background var(--duration-hover), transform var(--duration-hover);
+      cursor: pointer;
+      border: none;
+      margin-top: 6px;
+    }
+
+    .form-submit-btn:hover {
+      background: var(--color-primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .form-submit-btn:active {
+      transform: translateY(0);
+    }
+
+    .form-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      margin-top: 14px;
+    }
+
+    /* Success Message */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 32px 16px;
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    .form-success__checkmark {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: var(--color-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: checkmarkPop 0.5s var(--ease-out);
+    }
+
+    .form-success__checkmark svg {
+      width: 36px;
+      height: 36px;
+      color: var(--color-white);
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+      animation: checkmarkDraw 0.6s 0.3s forwards var(--ease-out);
+    }
+
+    @keyframes checkmarkPop {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.15); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes checkmarkDraw {
+      to { stroke-dashoffset: 0; }
+    }
+
+    .form-success__title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+
+    .form-success__text {
+      font-size: 1rem;
+      color: var(--color-text-light);
+    }
+
+    /* ========== HOW TO FIND US ========== */
+    .find-us-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    @media (min-width: 768px) {
+      .find-us-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+    }
+
+    .find-us-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .find-us-address {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .find-us-address svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-primary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .find-us-directions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .find-us-direction {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      background: var(--color-card);
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+    }
+
+    .find-us-direction svg {
+      width: 22px;
+      height: 22px;
+      color: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .find-us-direction__label {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      margin-bottom: 4px;
+    }
+
+    .find-us-direction__text {
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+      line-height: 1.5;
+    }
+
+    .find-us-photo-placeholder {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--color-bg-alt), var(--color-primary-light));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+      font-style: italic;
+      border: 2px dashed var(--color-border);
+    }
+
+    .find-us-map {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .find-us-map-placeholder {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, var(--color-bg-alt) 0%, #E8DDD0 100%);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--color-text-light);
+      border: 2px dashed var(--color-border);
+    }
+
+    .find-us-map-placeholder svg {
+      width: 48px;
+      height: 48px;
+      color: var(--color-accent);
+    }
+
+    .find-us-map-placeholder__text {
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    .find-us-map-placeholder__coords {
+      font-size: 0.82rem;
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* ========== WORKING HOURS ========== */
+    .hours-card {
+      max-width: 520px;
+      margin: 0 auto;
+      background: var(--color-card);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 24px rgba(61, 43, 31, 0.06);
+      border: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .hours-card__icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 16px;
+      background: var(--color-primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hours-card__icon svg {
+      width: 28px;
+      height: 28px;
+      color: var(--color-primary);
+    }
+
+    .hours-card__schedule {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 6px;
+    }
+
+    .hours-card__days {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+
+    .hours-card__note {
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+      line-height: 1.5;
+    }
+
+    /* ========== FLOATING BUTTONS ========== */
+    .floating-btn {
+      position: fixed;
+      z-index: 900;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+      transition: transform var(--duration-hover), box-shadow var(--duration-hover);
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
+    }
+
+    .floating-btn svg {
+      width: 28px;
+      height: 28px;
+      color: var(--color-white);
+    }
+
+    .floating-whatsapp {
+      bottom: 24px;
+      right: 24px;
+      background: var(--color-whatsapp);
+    }
+
+    .floating-phone {
+      bottom: 24px;
+      right: 92px;
+      background: var(--color-primary);
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      .floating-phone {
+        display: flex;
+      }
+    }
+
+    .floating-telegram {
+      position: fixed;
+      bottom: 88px;
+      right: 24px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #0088CC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4);
+      transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .floating-telegram:hover {
+      transform: scale(1.1);
+    }
+
+    .floating-telegram svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      background: var(--color-text);
+      color: rgba(255, 255, 255, 0.75);
+      padding: 56px 0 0;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.75);
+      transition: color var(--duration-hover);
+    }
+
+    .footer a:hover {
+      color: var(--color-white);
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    .footer__brand-logo {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-white);
+      margin-bottom: 12px;
+    }
+
+    .footer__brand-desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer__col-title {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-white);
+      margin-bottom: 14px;
+    }
+
+    .footer__col ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer__col ul li a {
+      font-size: 0.9rem;
+    }
+
+    .footer__socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .footer__social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--duration-hover);
+    }
+
+    .footer__social-icon:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .footer__social-icon svg {
+      width: 18px;
+      height: 18px;
+      color: var(--color-white);
+    }
+
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .footer__copy {
+      font-size: 0.85rem;
+    }
+
+    .footer__mini-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--color-whatsapp);
+      color: var(--color-white);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: filter var(--duration-hover), transform var(--duration-hover);
+    }
+
+    .footer__mini-cta:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+    }
+
+    .footer__mini-cta svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ========== PROMO BAR ========== */
+    .promo-bar {
+      position: relative;
+      background: linear-gradient(90deg, #C75B39 0%, #D4884A 100%);
+      color: #fff;
+      padding: 10px 48px 10px 20px;
+      z-index: 1;
+      font-size: 0.875rem;
+    }
+    .promo-bar__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .promo-bar__text { font-weight: 700; }
+    .promo-bar__timer {
+      background: rgba(0,0,0,0.18);
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-variant-numeric: tabular-nums;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    .promo-bar__btn {
+      display: inline-block;
+      background: #fff;
+      color: #C75B39;
+      padding: 5px 18px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .promo-bar__btn:hover { opacity: 0.85; }
+    .promo-bar__close {
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.85);
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 50%;
+      transition: background 0.2s;
+    }
+    .promo-bar__close:hover { background: rgba(255,255,255,0.15); }
+
+    /* ========== PROMO POPUP ========== */
+    .promo-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(61, 43, 31, 0.72);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+    .promo-overlay.is-open { opacity: 1; visibility: visible; }
+    .promo-modal {
+      background: #FDF8F3;
+      border-radius: 20px;
+      padding: 52px 40px 40px;
+      max-width: 460px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 24px 80px rgba(61, 43, 31, 0.28);
+      transform: translateY(20px) scale(0.96);
+      transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .promo-overlay.is-open .promo-modal { transform: translateY(0) scale(1); }
+    .promo-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #6B5744;
+      padding: 6px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .promo-close:hover { background: #F0D5CA; }
+    .promo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #C75B39;
+      color: #fff;
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      box-shadow: 0 6px 20px rgba(199, 91, 57, 0.35);
+    }
+    .promo-title {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 1.55rem;
+      color: #3D2B1F;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .promo-text {
+      color: #6B5744;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+    .promo-form { display: flex; flex-direction: column; gap: 12px; }
+    .promo-input {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1.5px solid #E8DDD0;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: #3D2B1F;
+      background: #fff;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .promo-input:focus { border-color: #C75B39; }
+    .promo-btn {
+      background: #C75B39;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .promo-btn:hover { background: #A84D2E; transform: translateY(-1px); }
+    .promo-note { margin-top: 14px; font-size: 0.8rem; color: #9B8676; }
+
+    /* ========== REVIEWS WIDGET ========== */
+    .reviews-widget-section {
+      padding: 48px 0;
+      background: #F5EDE3;
+    }
+    .reviews-widget-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .reviews-widget-grid { grid-template-columns: 1fr; }
+    }
+    .reviews-yandex-summary {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 28px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(61,43,31,0.08);
+      min-width: 180px;
+    }
+    .reviews-yandex-summary__logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .reviews-yandex-summary__brand {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #3D2B1F;
+    }
+    .reviews-yandex-summary__score {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #3D2B1F;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .reviews-yandex-summary__stars { color: #FFB800; font-size: 1.3rem; letter-spacing: 2px; }
+    .reviews-yandex-summary__count { font-size: 0.85rem; color: #6B5744; margin-top: 4px; }
+    .reviews-yandex-summary__link {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 8px 18px;
+      background: #C75B39;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+    .reviews-yandex-summary__link:hover { background: #A84D2E; }
+    .reviews-mini-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .reviews-mini-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 2px 12px rgba(61,43,31,0.06);
+    }
+    .reviews-mini-card__header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .reviews-mini-card__avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #F0D5CA;
+      color: #C75B39;
+      font-family: 'Comfortaa', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .reviews-mini-card__name { font-weight: 700; font-size: 0.9rem; color: #3D2B1F; }
+    .reviews-mini-card__stars { color: #FFB800; font-size: 0.85rem; }
+    .reviews-mini-card__date { font-size: 0.75rem; color: #9B8676; margin-left: auto; }
+    .reviews-mini-card__text { font-size: 0.88rem; color: #6B5744; line-height: 1.5; }
+    @media (max-width: 480px) {
+      .promo-modal { padding: 40px 24px 32px; }
+      .promo-badge { width: 76px; height: 76px; font-size: 2rem; }
+      .promo-title { font-size: 1.3rem; }
+    }
+    /* ========== EXIT INTENT POPUP ========== */
+    .exit-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(61, 43, 31, 0.78);
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+    .exit-overlay.is-open { opacity: 1; visibility: visible; }
+    .exit-price-old {
+      font-size: 1.1rem;
+      color: #9B8676;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+    .exit-price-new {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #C75B39;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .exit-price-note { font-size: 0.82rem; color: #6B5744; margin-bottom: 16px; }
+    .exit-timer-badge {
+      display: inline-block;
+      background: #FFF3E0;
+      color: #C75B39;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .header__logo-img { height: 44px; width: auto; vertical-align: middle; }
+    .header__logo-fallback { vertical-align: middle; }
+    .header__logo-placeholder { display: inline-block; width: 38px; height: 38px; background: #C75B39; border-radius: 8px; vertical-align: middle; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <!-- ========== PROMO BAR ========== -->
+  <div class="promo-bar" id="promoBar">
+    <div class="container promo-bar__inner">
+      <span class="promo-bar__text">🔥 Акция: −10% на первое занятие!</span>
+      <span class="promo-bar__timer" id="promoBarTimer">
+        <span id="pbHours">02</span>:<span id="pbMins">00</span>:<span id="pbSecs">00</span>
+      </span>
+      <a href="#booking-form" class="promo-bar__btn">Записаться</a>
+    </div>
+    <button class="promo-bar__close" id="promoBarClose" aria-label="Закрыть">✕</button>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Живая Глина — на главную"><span class="header__logo-placeholder"></span><span class="header__logo-fallback">ЖИВАЯ ГЛИНА</span></a>
+
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a href="index.html#directions">Направления</a>
+        <a href="prazdniki.html">Праздники</a>
+        <a href="galereya.html">Галерея</a>
+        <a href="kontakty.html" class="active" aria-current="page">Контакты</a>
+      </nav>
+
+      <div class="header__right">
+        <a href="tel:+74951502043" class="header__phone" aria-label="Позвонить: +7 495 150 20 43">
+          <!-- Phone icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+7 495 150 20 43</span>
+        </a>
+        <a href="#booking-form" class="header__cta">Записаться</a>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Мобильное меню">
+    <a href="index.html#directions">Направления</a>
+    <a href="prazdniki.html">Праздники</a>
+    <a href="galereya.html">Галерея</a>
+    <a href="kontakty.html" class="active" aria-current="page">Контакты</a>
+    <a href="tel:+74951502043" class="mobile-menu__phone">+7 495 150 20 43</a>
+    <a href="#booking-form" class="mobile-menu__cta" id="mobileCta">Записаться</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__title" data-animate>Свяжитесь с нами</h1>
+      <p class="hero__subtitle" data-animate>Запишитесь на занятие, задайте вопрос или организуйте праздник</p>
+    </div>
+  </section>
+
+  <!-- ========== BOOKING FORM SECTION ========== -->
+  <section class="section" id="booking-form">
+    <div class="container">
+      <h2 class="section__title" data-animate>Запишитесь на занятие</h2>
+
+      <div class="booking-grid">
+        <!-- Left Column: Call Us -->
+        <div class="booking-call" data-animate>
+          <div class="booking-call__heading">
+            <!-- Phone icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Позвоните нам
+          </div>
+
+          <div class="booking-call__phone-main">
+            <a href="tel:+74951502043">+7 495 150 20 43</a>
+          </div>
+
+          <p class="booking-call__schedule">Ежедневно с 10:00 до 20:00</p>
+
+          <div class="booking-call__messengers">
+            <a href="https://wa.me/79660134023" class="btn-messenger btn-messenger--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+              <!-- WhatsApp icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.84 0-3.644-.494-5.222-1.43l-.375-.222-3.884 1.019 1.037-3.79-.244-.388A9.723 9.723 0 0 1 2.03 12.05c0-5.532 4.502-10.033 10.05-10.033 2.68 0 5.2 1.044 7.095 2.942A9.972 9.972 0 0 1 22.083 12.1c-.005 5.532-4.507 10.033-10.038 10.033l.005-.348zm0-21.785C5.438 0 .055 5.373.05 11.982a11.94 11.94 0 0 0 1.6 5.983L0 24l6.2-1.625a11.971 11.971 0 0 0 5.725 1.458h.125C18.575 23.833 24 18.46 24.005 11.85 24.007 5.34 18.637 0 12.05 0z"/></svg>
+              Написать в WhatsApp
+            </a>
+            <a href="https://t.me/zh_glina" class="btn-messenger btn-messenger--telegram" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+              <!-- Telegram icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Написать в Telegram
+            </a>
+          </div>
+
+          <div class="booking-call__phones-extra">
+            <div class="booking-call__phones-extra-title">Дополнительные номера</div>
+            <a href="tel:+79660134023">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +7 966 013 40 23
+            </a>
+            <a href="tel:+79030162152">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +7 903 016 21 52
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="booking-form-wrapper" data-animate>
+          <div class="booking-form-wrapper__heading">
+            <!-- Form/pencil icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Оставьте заявку
+          </div>
+
+          <form id="bookingForm" novalidate>
+            <div class="form-group">
+              <label for="name">Ваше имя <span class="required">*</span></label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Как вас зовут?" required autocomplete="name">
+              <div class="error-message" id="nameError">Пожалуйста, введите ваше имя</div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Телефон <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+              <div class="error-message" id="phoneError">Пожалуйста, введите корректный номер телефона</div>
+            </div>
+
+            <div class="form-group">
+              <label for="direction">Направление</label>
+              <select id="direction" name="direction" class="form-control form-control--select">
+                <option value="" disabled selected>Выберите направление</option>
+                <option value="ceramics">Керамика</option>
+                <option value="painting">Живопись</option>
+                <option value="relief">Барельеф</option>
+                <option value="tufting">Тафтинг</option>
+                <option value="party">Праздник</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Предпочтительная дата</label>
+              <input type="date" id="date" name="date" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="comment">Комментарий</label>
+              <textarea id="comment" name="comment" class="form-control form-control--textarea" placeholder="Расскажите, что вас интересует" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-btn">Записаться</button>
+          </form>
+
+          <p class="form-note">Мы перезвоним в течение 15 минут в рабочее время</p>
+
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__checkmark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div class="form-success__title">Спасибо!</div>
+            <p class="form-success__text">Мы свяжемся с вами в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW TO FIND US ========== -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title" data-animate>Как нас найти</h2>
+
+      <div class="find-us-grid">
+        <!-- Left Column: Info -->
+        <div class="find-us-info" data-animate>
+          <div class="find-us-address">
+            <!-- Map pin icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>пос. Горки-2, Рублёво-Успенское шоссе, 23, Полюс Арена, 2-й этаж</span>
+          </div>
+
+          <div class="find-us-directions">
+            <div class="find-us-direction">
+              <!-- Car icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1l2-3h8l2 3h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2M5 17v2m14-2v2"/><circle cx="7.5" cy="13" r="1.5"/><circle cx="16.5" cy="13" r="1.5"/></svg>
+              <div>
+                <div class="find-us-direction__label">На машине</div>
+                <div class="find-us-direction__text">Рублёво-Успенское шоссе, 15 минут от МКАД. Бесплатная парковка на территории Полюс Арена.</div>
+              </div>
+            </div>
+
+            <div class="find-us-direction">
+              <!-- Navigation icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              <div>
+                <div class="find-us-direction__label">Ориентир</div>
+                <div class="find-us-direction__text">Заезжаете на территорию комплекса, вход в здание справа, 2-й этаж.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLACEHOLDER -->
+          <div class="find-us-photo-placeholder">
+            <!-- PLACEHOLDER: Фото входа в студию -->
+            Фото входа в студию — заменить
+          </div>
+        </div>
+
+        <!-- Right Column: Map -->
+        <div class="find-us-map" data-animate>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/-/CPf2mK3b"
+            width="100%"
+            height="420"
+            frameborder="0"
+            allowfullscreen
+            style="border-radius:12px;display:block;border:0;"
+            title="Гончарная студия Живая Глина — Горки-2, Рублёво-Успенское шоссе, 23"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS WIDGET ========== -->
+  <section class="reviews-widget-section">
+    <div class="container">
+      <h2 style="font-family:'Comfortaa',sans-serif;font-size:1.5rem;color:#3D2B1F;margin-bottom:24px;text-align:center;">Отзывы на Яндекс.Картах</h2>
+      <div class="reviews-widget-grid">
+        <!-- Summary Card -->
+        <div class="reviews-yandex-summary">
+          <div class="reviews-yandex-summary__logo">
+            <span class="reviews-yandex-summary__brand">Яндекс Карты</span>
+          </div>
+          <div class="reviews-yandex-summary__score">4.9</div>
+          <div class="reviews-yandex-summary__stars">★★★★★</div>
+          <div class="reviews-yandex-summary__count">150+ отзывов</div>
+          <a href="https://yandex.ru/maps/?text=Живая+Глина+гончарная+студия+Горки-2" target="_blank" rel="noopener noreferrer" class="reviews-yandex-summary__link">Все отзывы →</a>
+        </div>
+        <!-- Mini review cards -->
+        <div class="reviews-mini-list">
+          <div class="reviews-mini-card">
+            <div class="reviews-mini-card__header">
+              <div class="reviews-mini-card__avatar">АМ</div>
+              <div>
+                <div class="reviews-mini-card__name">Анна М.</div>
+                <div class="reviews-mini-card__stars">★★★★★</div>
+              </div>
+              <span class="reviews-mini-card__date">Март 2024</span>
+            </div>
+            <p class="reviews-mini-card__text">«Прекрасное творческое место для детей и взрослых. Опытные педагоги, уютная атмосфера — мы приходим сюда всей семьёй уже второй год.»</p>
+          </div>
+          <div class="reviews-mini-card">
+            <div class="reviews-mini-card__header">
+              <div class="reviews-mini-card__avatar">ОС</div>
+              <div>
+                <div class="reviews-mini-card__name">Олег С.</div>
+                <div class="reviews-mini-card__stars">★★★★★</div>
+              </div>
+              <span class="reviews-mini-card__date">Ноябрь 2023</span>
+            </div>
+            <p class="reviews-mini-card__text">«Подарил жене свидание за гончарным кругом — это был лучший подарок за последние годы. Атмосфера невероятная, мастера внимательные.»</p>
+          </div>
+          <div class="reviews-mini-card">
+            <div class="reviews-mini-card__header">
+              <div class="reviews-mini-card__avatar">МД</div>
+              <div>
+                <div class="reviews-mini-card__name">Мария Д.</div>
+                <div class="reviews-mini-card__stars">★★★★★</div>
+              </div>
+              <span class="reviews-mini-card__date">Декабрь 2023</span>
+            </div>
+            <p class="reviews-mini-card__text">«Привели дочку на день рождения — дети были в восторге! Каждый ушёл с собственной чашкой. Организация на высоте, рекомендую!»</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORKING HOURS ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title" data-animate>Режим работы</h2>
+
+      <div class="hours-card" data-animate>
+        <div class="hours-card__icon">
+          <!-- Clock icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="hours-card__days">Пн–Вс</div>
+        <div class="hours-card__schedule">10:00 — 20:00</div>
+        <p class="hours-card__note">Работаем без выходных. Праздничные дни — уточняйте по телефону.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FLOATING BUTTONS ========== -->
+  <!-- Floating Telegram -->
+  <a href="https://t.me/zh_glina" class="floating-telegram" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+  </a>
+
+  <a href="https://wa.me/79660134023" class="floating-btn floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.84 0-3.644-.494-5.222-1.43l-.375-.222-3.884 1.019 1.037-3.79-.244-.388A9.723 9.723 0 0 1 2.03 12.05c0-5.532 4.502-10.033 10.05-10.033 2.68 0 5.2 1.044 7.095 2.942A9.972 9.972 0 0 1 22.083 12.1c-.005 5.532-4.507 10.033-10.038 10.033l.005-.348zm0-21.785C5.438 0 .055 5.373.05 11.982a11.94 11.94 0 0 0 1.6 5.983L0 24l6.2-1.625a11.971 11.971 0 0 0 5.725 1.458h.125C18.575 23.833 24 18.46 24.005 11.85 24.007 5.34 18.637 0 12.05 0z"/></svg>
+  </a>
+
+  <a href="tel:+74951502043" class="floating-btn floating-phone" aria-label="Позвонить">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">ЖИВАЯ ГЛИНА</div>
+          <p class="footer__brand-desc">Гончарная студия для взрослых и детей. Керамика, живопись, барельеф, тафтинг и творческие праздники в уютной атмосфере.</p>
+          <div class="footer__socials">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/79660134023" class="footer__social-icon" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.84 0-3.644-.494-5.222-1.43l-.375-.222-3.884 1.019 1.037-3.79-.244-.388A9.723 9.723 0 0 1 2.03 12.05c0-5.532 4.502-10.033 10.05-10.033 2.68 0 5.2 1.044 7.095 2.942A9.972 9.972 0 0 1 22.083 12.1c-.005 5.532-4.507 10.033-10.038 10.033l.005-.348zm0-21.785C5.438 0 .055 5.373.05 11.982a11.94 11.94 0 0 0 1.6 5.983L0 24l6.2-1.625a11.971 11.971 0 0 0 5.725 1.458h.125C18.575 23.833 24 18.46 24.005 11.85 24.007 5.34 18.637 0 12.05 0z"/></svg>
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/zh_glina" class="footer__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+            <!-- VK -->
+            <a href="#" class="footer__social-icon" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.51-.743.673-.022.673-.278 0-.359-.279-.359-.604V6.855c0-.558-.161-.806-.626-.806H10.94c-.348 0-.558.259-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.128.836-.406.836-.743 0-2.551-2.729-3.624-5.853-.21-.607-.42-.852-.98-.852H4.05c-.627 0-.752.295-.752.619 0 .58.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.852v-1.966c0-.627.132-.752.574-.752.325 0 .883.163 2.183 1.417 1.486 1.486 1.732 2.153 2.568 2.153h2.193c.627 0 .94-.313.759-.932-.198-.616-.91-1.51-1.854-2.57-.512-.604-1.278-1.254-1.51-1.579-.326-.418-.233-.604 0-.976 0 0 2.672-3.762 2.95-5.04z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="footer__social-icon" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="footer__social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Directions column -->
+        <div class="footer__col">
+          <div class="footer__col-title">Направления</div>
+          <ul>
+            <li><a href="index.html#directions">Керамика</a></li>
+            <li><a href="index.html#directions">Живопись</a></li>
+            <li><a href="index.html#directions">Барельеф</a></li>
+            <li><a href="index.html#directions">Тафтинг</a></li>
+          </ul>
+        </div>
+
+        <!-- Services column -->
+        <div class="footer__col">
+          <div class="footer__col-title">Услуги</div>
+          <ul>
+            <li><a href="prazdniki.html">Праздники</a></li>
+            <li><a href="galereya.html">Галерея работ</a></li>
+            <li><a href="kontakty.html">Запись на занятие</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacts column -->
+        <div class="footer__col">
+          <div class="footer__col-title">Контакты</div>
+          <ul>
+            <li><a href="tel:+74951502043">+7 495 150 20 43</a></li>
+            <li><a href="tel:+79660134023">+7 966 013 40 23</a></li>
+            <li><a href="tel:+79030162152">+7 903 016 21 52</a></li>
+          </ul>
+          <p style="font-size:0.85rem; margin-top:12px; line-height:1.5;">пос. Горки-2, Рублёво-Успенское шоссе, 23, Полюс Арена, 2 этаж</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; Гончарная студия &laquo;Живая Глина&raquo;</span>
+        <a href="https://wa.me/79660134023" class="footer__mini-cta" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.84 0-3.644-.494-5.222-1.43l-.375-.222-3.884 1.019 1.037-3.79-.244-.388A9.723 9.723 0 0 1 2.03 12.05c0-5.532 4.502-10.033 10.05-10.033 2.68 0 5.2 1.044 7.095 2.942A9.972 9.972 0 0 1 22.083 12.1c-.005 5.532-4.507 10.033-10.038 10.033l.005-.348zm0-21.785C5.438 0 .055 5.373.05 11.982a11.94 11.94 0 0 0 1.6 5.983L0 24l6.2-1.625a11.971 11.971 0 0 0 5.725 1.458h.125C18.575 23.833 24 18.46 24.005 11.85 24.007 5.34 18.637 0 12.05 0z"/></svg>
+          Написать в WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ===== Reduced motion check =====
+      var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // ===== 1. Intersection Observer for data-animate elements =====
+      function initAnimations() {
+        var animatedElements = document.querySelectorAll('[data-animate]');
+        if (!animatedElements.length) return;
+
+        if (prefersReducedMotion) {
+          animatedElements.forEach(function(el) {
+            el.classList.add('is-visible');
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        animatedElements.forEach(function(el) {
+          observer.observe(el);
+        });
+      }
+
+      // ===== 2. Sticky header blur =====
+      function initStickyHeader() {
+        var header = document.getElementById('header');
+        if (!header) return;
+
+        var scrollThreshold = 20;
+
+        function onScroll() {
+          if (window.scrollY > scrollThreshold) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+
+      // ===== 3. Burger menu =====
+      function initBurgerMenu() {
+        var burger = document.getElementById('burger');
+        var mobileMenu = document.getElementById('mobileMenu');
+        var mobileCta = document.getElementById('mobileCta');
+        if (!burger || !mobileMenu) return;
+
+        function toggleMenu() {
+          var isOpen = burger.classList.toggle('open');
+          mobileMenu.classList.toggle('open');
+          burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        }
+
+        function closeMenu() {
+          burger.classList.remove('open');
+          mobileMenu.classList.remove('open');
+          burger.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
+
+        burger.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking any link
+        var menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(function(link) {
+          link.addEventListener('click', closeMenu);
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+            closeMenu();
+          }
+        });
+      }
+
+      // ===== 4. Form validation and submission =====
+      function initForm() {
+        var form = document.getElementById('bookingForm');
+        var formSuccess = document.getElementById('formSuccess');
+        if (!form || !formSuccess) return;
+
+        var nameInput = document.getElementById('name');
+        var phoneInput = document.getElementById('phone');
+        var nameError = document.getElementById('nameError');
+        var phoneError = document.getElementById('phoneError');
+
+        function showError(input, errorEl) {
+          input.classList.add('error');
+          errorEl.classList.add('visible');
+        }
+
+        function hideError(input, errorEl) {
+          input.classList.remove('error');
+          errorEl.classList.remove('visible');
+        }
+
+        // Clear errors on input
+        nameInput.addEventListener('input', function() {
+          if (nameInput.value.trim().length > 0) {
+            hideError(nameInput, nameError);
+          }
+        });
+
+        phoneInput.addEventListener('input', function() {
+          var cleaned = phoneInput.value.replace(/\D/g, '');
+          if (cleaned.length >= 10) {
+            hideError(phoneInput, phoneError);
+          }
+        });
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          var isValid = true;
+
+          // Validate name
+          if (!nameInput.value.trim()) {
+            showError(nameInput, nameError);
+            isValid = false;
+          } else {
+            hideError(nameInput, nameError);
+          }
+
+          // Validate phone
+          var cleanedPhone = phoneInput.value.replace(/\D/g, '');
+          if (cleanedPhone.length < 10) {
+            showError(phoneInput, phoneError);
+            isValid = false;
+          } else {
+            hideError(phoneInput, phoneError);
+          }
+
+          if (!isValid) return;
+
+          // Hide form, show success
+          form.style.display = 'none';
+          form.nextElementSibling.style.display = 'none'; // Hide form-note
+          formSuccess.classList.add('visible');
+
+          // Reset form for potential resubmission
+          form.reset();
+        });
+      }
+
+      // ===== 5. Phone mask =====
+      function initPhoneMask() {
+        var phoneInput = document.getElementById('phone');
+        if (!phoneInput) return;
+
+        phoneInput.addEventListener('input', function(e) {
+          var value = phoneInput.value.replace(/\D/g, '');
+          var formatted = '';
+
+          if (value.length === 0) {
+            formatted = '';
+          } else {
+            // Handle prefix
+            if (value[0] === '7' || value[0] === '8') {
+              formatted = '+7';
+              value = value.substring(1);
+            } else if (value[0] !== '+') {
+              formatted = '+7';
+            }
+
+            if (value.length > 0) {
+              formatted += ' (' + value.substring(0, 3);
+            }
+            if (value.length >= 3) {
+              formatted += ') ' + value.substring(3, 6);
+            }
+            if (value.length >= 6) {
+              formatted += '-' + value.substring(6, 8);
+            }
+            if (value.length >= 8) {
+              formatted += '-' + value.substring(8, 10);
+            }
+          }
+
+          phoneInput.value = formatted;
+        });
+
+        phoneInput.addEventListener('keydown', function(e) {
+          // Allow: backspace, delete, tab, escape, enter
+          if ([8, 46, 9, 27, 13].indexOf(e.keyCode) !== -1 ||
+              // Allow: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
+              (e.keyCode === 65 && e.ctrlKey) ||
+              (e.keyCode === 67 && e.ctrlKey) ||
+              (e.keyCode === 86 && e.ctrlKey) ||
+              (e.keyCode === 88 && e.ctrlKey) ||
+              // Allow: home, end, left, right
+              (e.keyCode >= 35 && e.keyCode <= 39)) {
+            return;
+          }
+          // Block non-numeric
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105) && e.keyCode !== 107) {
+            e.preventDefault();
+          }
+        });
+
+        // Focus auto-fill prefix
+        phoneInput.addEventListener('focus', function() {
+          if (!phoneInput.value) {
+            phoneInput.value = '+7 (';
+          }
+        });
+      }
+
+      // ===== Initialize everything =====
+      document.addEventListener('DOMContentLoaded', function() {
+        initAnimations();
+        initStickyHeader();
+        initBurgerMenu();
+        initForm();
+        initPhoneMask();
+      });
+
+    })();
+  </script>
+
+  <!-- ========== PROMO POPUP ========== -->
+  <div class="promo-overlay" id="promoOverlay" role="dialog" aria-modal="true" aria-labelledby="promoTitle">
+    <div class="promo-modal">
+      <button class="promo-close" id="promoClose" aria-label="Закрыть">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="promo-badge">−10%</div>
+      <h2 class="promo-title" id="promoTitle">Скидка на первое занятие</h2>
+      <p class="promo-text">Оставьте имя и телефон — мы перезвоним и запишем вас по специальной цене</p>
+      <form class="promo-form" id="promoForm">
+        <input type="text" class="promo-input" placeholder="Ваше имя" required>
+        <input type="tel" class="promo-input" placeholder="Телефон или WhatsApp" required>
+        <button type="submit" class="promo-btn">Получить скидку 10%</button>
+      </form>
+      <p class="promo-note">⏰ Акция действует до 31 мая 2026 года</p>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var bar = document.getElementById('promoBar');
+      var closeBtn = document.getElementById('promoBarClose');
+      if (!bar) return;
+      if (localStorage.getItem('zg_bar_closed')) { bar.style.display = 'none'; return; }
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          bar.style.display = 'none';
+          localStorage.setItem('zg_bar_closed', '1');
+        });
+      }
+      var TIMER_KEY = 'zg_timer_start';
+      var TWO_HOURS = 2 * 60 * 60 * 1000;
+      var start = parseInt(localStorage.getItem(TIMER_KEY));
+      if (!start || isNaN(start)) {
+        start = Date.now();
+        localStorage.setItem(TIMER_KEY, String(start));
+      }
+      var deadline = start + TWO_HOURS;
+      function tick() {
+        var diff = deadline - Date.now();
+        if (diff <= 0) {
+          var timerEl = document.getElementById('promoBarTimer');
+          if (timerEl) timerEl.textContent = 'Успейте записаться!';
+          return;
+        }
+        var h = Math.floor(diff / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+        var pad = function(n) { return String(n).padStart(2, '0'); };
+        var hEl = document.getElementById('pbHours');
+        var mEl = document.getElementById('pbMins');
+        var sEl = document.getElementById('pbSecs');
+        if (hEl) hEl.textContent = pad(h);
+        if (mEl) mEl.textContent = pad(m);
+        if (sEl) sEl.textContent = pad(s);
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+    (function() {
+      var overlay = document.getElementById('promoOverlay');
+      var closeBtn = document.getElementById('promoClose');
+      var form = document.getElementById('promoForm');
+      if (!overlay) return;
+      var KEY = 'zg_promo_shown';
+      function show() { if (!localStorage.getItem(KEY)) overlay.classList.add('is-open'); }
+      function hide() { overlay.classList.remove('is-open'); localStorage.setItem(KEY, '1'); }
+      setTimeout(show, 30000);
+      document.addEventListener('mouseleave', function(e) { if (e.clientY <= 0) show(); });
+      if (closeBtn) closeBtn.addEventListener('click', hide);
+      overlay.addEventListener('click', function(e) { if (e.target === overlay) hide(); });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') hide(); });
+      if (form) { form.addEventListener('submit', function(e) { e.preventDefault(); hide(); }); }
+    })();
+    // ========== EXIT INTENT ==========
+    (function() {
+      var overlay = document.getElementById('exitOverlay');
+      var closeBtn = document.getElementById('exitClose');
+      var form = document.getElementById('exitForm');
+      if (!overlay) return;
+      var KEY = 'zg_exit_shown';
+      var shown = false;
+      var timerIv = null;
+      function startTimer() {
+        var total = 10 * 60;
+        timerIv = setInterval(function() {
+          total--;
+          if (total <= 0) { clearInterval(timerIv); overlay.classList.remove('is-open'); return; }
+          var pad = function(n) { return String(n).padStart(2, '0'); };
+          var mEl = document.getElementById('exitMins');
+          var sEl = document.getElementById('exitSecs');
+          if (mEl) mEl.textContent = pad(Math.floor(total / 60));
+          if (sEl) sEl.textContent = pad(total % 60);
+        }, 1000);
+      }
+      function showExit() {
+        if (shown || localStorage.getItem(KEY)) return;
+        shown = true;
+        overlay.classList.add('is-open');
+        localStorage.setItem(KEY, '1');
+        startTimer();
+      }
+      function hideExit() {
+        overlay.classList.remove('is-open');
+        if (timerIv) clearInterval(timerIv);
+      }
+      document.addEventListener('mouseleave', function(e) {
+        if (e.relatedTarget === null && e.clientY < 20) showExit();
+      });
+      if (closeBtn) closeBtn.addEventListener('click', hideExit);
+      overlay.addEventListener('click', function(e) { if (e.target === overlay) hideExit(); });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') hideExit(); });
+      if (form) { form.addEventListener('submit', function(e) { e.preventDefault(); hideExit(); }); }
+    })();
+  </script>
+
+  <!-- ========== EXIT INTENT POPUP ========== -->
+  <div class="exit-overlay" id="exitOverlay" role="dialog" aria-modal="true">
+    <div class="promo-modal">
+      <button class="promo-close" id="exitClose" aria-label="Закрыть">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div style="font-size:2.2rem;margin-bottom:12px;">🎁</div>
+      <h2 class="promo-title">Подождите! Только для вас</h2>
+      <p class="promo-text">Для новых клиентов при записи прямо сейчас — специальная цена на пробное занятие:</p>
+      <div class="exit-price-old">3 000 ₽</div>
+      <div class="exit-price-new">2 700 ₽</div>
+      <div class="exit-price-note">Экономия 300 ₽ · Все материалы включены</div>
+      <div class="exit-timer-badge">⏰ Предложение действует: <span id="exitMins">10</span>:<span id="exitSecs">00</span></div>
+      <form class="promo-form" id="exitForm">
+        <input type="text" class="promo-input" placeholder="Ваше имя" required>
+        <input type="tel" class="promo-input" placeholder="Телефон или WhatsApp" required>
+        <button type="submit" class="promo-btn">Записаться за 2 700 ₽</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
